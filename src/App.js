@@ -1,7 +1,33 @@
 import "./App.css";
 
 function App() {
-  return <h1>log in page</h1>;
+  return <LoginPage />;
+}
+
+function LoginPage() {
+  return (
+    <section className="LoginPage">
+      <form className="LoginForm">
+        <ul>
+          <li>
+            <span>Username:</span>
+          </li>
+          <li>
+            <input type="text" placeholder="Username/Email" />
+          </li>
+          <li>
+            <span>Password:</span>
+          </li>
+          <li>
+            <input type="password" placeholder="Password" />
+          </li>
+          <li>
+            <button>LOGIN</button>
+          </li>
+        </ul>
+      </form>
+    </section>
+  );
 }
 
 export default App;
